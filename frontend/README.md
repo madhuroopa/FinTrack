@@ -14,6 +14,38 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+## Install the dependencies:
+
+    - **@types/axios**: TypeScript definitions for Axios.
+        ```sh
+        npm install --save-dev @types/axios
+        ```
+        
+    - **axios**: A promise-based HTTP client for making HTTP requests to APIs.
+        ```sh
+        npm install axios --save
+        ```
+
+    - **dotenv**: Loads environment variables from a `.env` file into `process.env`.
+        ```sh
+        npm install dotenv
+        ```
+
+    - **uuid**: Generates RFC-compliant UUIDs for unique identifiers.
+        ```sh
+        npm install uuid
+        ```
+
+    - **@types/uuid**: TypeScript definitions for the UUID package.
+        ```sh
+        npm install --save-dev @types/uuid
+        ```
+
+    - **tailwindcss**: A utility-first CSS framework for rapid UI development.
+        ```sh
+        npm install -D tailwindcss
+        ```
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
