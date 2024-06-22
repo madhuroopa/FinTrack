@@ -16,35 +16,35 @@ You will also see any lint errors in the console.
 
 ## Install the dependencies:
 
-    - **@types/axios**: TypeScript definitions for Axios.
-        ```sh
-        npm install --save-dev @types/axios
-        ```
+    - @types/axios: TypeScript definitions for Axios.
         
-    - **axios**: A promise-based HTTP client for making HTTP requests to APIs.
-        ```sh
+        npm install --save-dev @types/axios
+        
+        
+    - axios: A promise-based HTTP client for making HTTP requests to APIs.
+        
         npm install axios --save
-        ```
+        
 
-    - **dotenv**: Loads environment variables from a `.env` file into `process.env`.
-        ```sh
+    - dotenv: Loads environment variables from a `.env` file into `process.env`.
+        
         npm install dotenv
-        ```
+        
 
-    - **uuid**: Generates RFC-compliant UUIDs for unique identifiers.
-        ```sh
+    - uuid: Generates RFC-compliant UUIDs for unique identifiers.
+        
         npm install uuid
-        ```
+        
 
-    - **@types/uuid**: TypeScript definitions for the UUID package.
-        ```sh
+    - @types/uuid: TypeScript definitions for the UUID package.
+        
         npm install --save-dev @types/uuid
-        ```
+        
 
-    - **tailwindcss**: A utility-first CSS framework for rapid UI development.
-        ```sh
+    - tailwindcss: A utility-first CSS framework for rapid UI development.
+        
         npm install -D tailwindcss
-        ```
+        
 
 ### `npm test`
 
