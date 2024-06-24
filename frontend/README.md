@@ -48,6 +48,7 @@ You will also see any lint errors in the console.
     -npm install --save react-router-dom
     npm install --save @types/react-router-dom
     npm install --save @types/react-router
+    npm i react-spinners
 
 ### `npm test`
 
