@@ -1,0 +1,6 @@
+@types/axios
+axios
+dotenv
+uuid
+@types/uuid
+tailwindCss
