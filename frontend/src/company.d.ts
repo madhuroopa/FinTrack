@@ -325,7 +325,7 @@ export interface CompanySearch {
   }
   
   export interface CompanyCompData {
-    symbol: string;
+    
     peersList: string[];
   }
   
