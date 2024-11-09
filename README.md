@@ -110,18 +110,18 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Balance sheet page 
 ![image](https://github.com/user-attachments/assets/caf6bcfa-1a1f-44c9-a8f2-710d0fde39d8)
 
-## Cash Flow statement
+## Stock Comments
 ![image](https://github.com/user-attachments/assets/11ef5b38-745a-45cf-a52a-57de8be65ab0)
 
-## Stock Comments
+
 ![image](https://github.com/user-attachments/assets/94b55c5d-8ae0-4280-af59-50b6f912fb7a)
 
-## My Portfolio page
+## Stock GPT Page
 
 ![image](https://github.com/user-attachments/assets/681b2e5e-ecc7-4828-a24a-4cecae023c88)
 
-## Stock GPT Page
-![Uploading image.png…]()
+
+
 
 
 
