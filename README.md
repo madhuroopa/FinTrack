@@ -141,3 +141,60 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Screenshots
+
+## Home Page
+
+![image](https://github.com/user-attachments/assets/506ecede-d00b-47d5-8131-8a36735170d7)
+
+## Login Page
+
+![image](https://github.com/user-attachments/assets/acd604bf-027a-4e7a-bd18-3dc2776173fe)
+
+## Search page 
+
+![image](https://github.com/user-attachments/assets/e5152bf7-7f18-43ef-a6db-6af2cafcd802)
+
+## Search Page- searching for a ticker
+
+![image](https://github.com/user-attachments/assets/735eedaf-3403-45b9-a5a1-3f4da32ebe2d)
+
+##  Particular Company Profile
+
+![image](https://github.com/user-attachments/assets/a7da37e9-d45e-4ffc-822f-85a961d3a866)
+
+## Income statement Page
+![image](https://github.com/user-attachments/assets/b74aed4e-734e-4fb0-a2dc-8b76e967f6ca)
+
+## Balance sheet page 
+![image](https://github.com/user-attachments/assets/caf6bcfa-1a1f-44c9-a8f2-710d0fde39d8)
+
+## Stock Comments
+![image](https://github.com/user-attachments/assets/11ef5b38-745a-45cf-a52a-57de8be65ab0)
+
+## My portfolio Page
+
+![image](https://github.com/user-attachments/assets/94b55c5d-8ae0-4280-af59-50b6f912fb7a)
+
+## Stock GPT Page
+
+![image](https://github.com/user-attachments/assets/681b2e5e-ecc7-4828-a24a-4cecae023c88)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
