@@ -44,12 +44,18 @@ You will also see any lint errors in the console.
     - tailwindcss: A utility-first CSS framework for rapid UI development.
         
         npm install -D tailwindcss
+    
     -npm install -save react-router
+    
     -npm install --save react-router-dom
+    
     npm install --save @types/react-router-dom
+    
     npm install --save @types/react-router
+    
     npm i react-spinners
 
+    - Ai
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

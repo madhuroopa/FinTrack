@@ -49,6 +49,67 @@ You will also see any lint errors in the console.
     npm install --save @types/react-router-dom
     npm install --save @types/react-router
     npm i react-spinners
+   - DOT NET Setup 
+   dotnet new webapi -o api
+   dotnet watch run ---> swagger
+   installed all the extenstions such as nuget gallery, C#, DOT NET Extension pack, DOT NET install tool, C# extension by JosKreativ
+
+   ### created models 
+
+   #### 1. Stock Model
+
+   #### 2. Comments Model
+        --public int? StockId { get; set; }  // Foreign Key
+        --public Stock? Stock { get; set; }  // Navigation property
+    ##### Primary Key (Stock.StockId): Uniquely identifies each Stock record.
+    ##### Foreign Key (Comment.StockId): Links each Comment to a Stock. It is nullable, meaning a Comment does ##### not have to be associated with a Stock.
+    ##### Navigation Property (Comment.Stock): Provides a way to navigate from a Comment to its associated Stock.
+
+    ### ENTITY FRAMEWORK
+    ##### From Nuget install the Entity Framework sql server tools, Entity framework tools, design etc. 
+
+    ### Registration and Login 
+
+    #### JWT ( Json based Token )
+    ![alt text](image-1.png)
+    #### Packages required 
+    ##### Microsoft.Extensions.IdentityCore
+    ##### Microsoft.AspNetCore.Identity.EntityFrameworkCOre
+    ##### Microsoft.AspNetCore.Authentication.JwtBearer
+
+    ### Steps
+
+    ### Intial Steps
+    ##### Create a Model for the user - Identity provides with the IdentityUser class
+    ##### Let then Application DB context know we are using the Identity DB context
+    ##### Add the authentication scheme in the program.cs i.e tell wether you are using the JWT or cookies etc.
+    ### Register Service
+    #####  We use UserManger class for this purpose
+    ##### UserManager class is used for managing users, including operations like creating, updating, deleting users, and managing user roles. It provides an abstraction over user-related operations and interacts with the underlying data store.
+    ##### Before creating any user we need to seed the roles, go to ApplicationDbCOntext 
+    ![alt text](image-2.png)
+    ##### THen create the register method in controller and use DTO to interact with db. CReate register dto and then use that ton create user using createAsync(user)
+    #### Claims vs Roles
+    ##### previously if you want to get any role, you need to get it from the database. For instance, if there are 20 diff roles and you need to get any role then you need to get them from the db which is cumbersome task
+    ##### So, this is where claims come in, they are like a tag associated with the user. They don't use the DB, they are flexible. 
+    ##### We are going to generate the JWT  and then stuff it with claims i.e roles like the key value pairs like the things what the user does and what the user can do
+    ##### As soon as the JWT enters the server, the HWT is going to be blown away and the stuffed user details are going to be associated with the user each time they use a particular end point, which allows to access it through http context.
+
+
+
+
+
+
+
+    ### Many -To - Many Relationships 
+
+    ##### We want the user to add infinite combinations of stocks to their portfolio and we want other users to be able to add stocks as well too so we need endless combinations of stocks
+    ![alt text](image.png)
+    ##### Create a many to many join table 
+    ![alt text](image-3.png)
+
+
+
 
 ### `npm test`
 

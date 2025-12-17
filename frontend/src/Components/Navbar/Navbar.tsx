@@ -1,35 +1,58 @@
-import React from 'react'
-import logo from './logo.png'
-import { Link } from 'react-router-dom';
+
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "./logo.png";
+import "./Navbar.css";
+import { useAuth } from "../../Context/useAuth";
+
 interface Props {}
 
 const Navbar = (props: Props) => {
-    return (
-      <nav className="relative container mx-auto p-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-20">
-            <Link to ="/">
-         <img src={logo} alt="Logo" style={{ width: '130px', height: '50px' }} />
-         </Link>
-            <div className="hidden font-bold lg:flex">
-              <Link to="/search" className="text-black hover:text-darkBlue">
-                Search
-              </Link>
-            </div>
-          </div>
-          <div className="hidden lg:flex items-center space-x-6 text-back">
-            <div className="hover:text-darkBlue">Login</div>
-            <a
-              href=""
-              className="px-8 py-3 font-bold rounded text-white bg-lightGreen hover:opacity-70"
-              style={{ backgroundColor: '#0066b2' }}
-            >
-              Signup
-            </a>
+  const { isLoggedIn, user, logout } = useAuth();
+  return (
+    <nav className="relative container mx-auto p-6">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-20">
+          <Link to="/">
+            <img src={logo} alt="" style={{ width: '130px', height: '50px' }}/>
+          </Link>
+          <div className="hidden font-bold lg:flex">
+            <Link to="/search" className="text-black hover:text-darkBlue">
+              Search
+            </Link>
+            <span className="mx-4"></span>
+            <Link to="/stockchatbot" className="text-black hover:text-darkBlue">
+              Stock GPT
+            </Link>
+
           </div>
         </div>
-      </nav>
-    );
-  };
+        {isLoggedIn() ? (
+          <div className="hidden lg:flex items-center space-x-6 text-back">
+            <div className="hover:text-darkBlue">Welcome, {user?.userName}</div>
+            <a
+              onClick={logout}
+              className="px-8 py-3 font-bold rounded text-white bg-lightGreen hover:opacity-70"
+            >
+              Logout
+            </a>
+          </div>
+        ) : (
+          <div className="hidden lg:flex items-center space-x-6 text-back">
+            <Link to="/login" className="hover:text-darkBlue">
+              Login
+            </Link>
+            <Link
+              to="/register"
+              className="px-8 py-3 font-bold rounded text-white bg-lightGreen hover:opacity-70"
+            >
+              Signup
+            </Link>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
